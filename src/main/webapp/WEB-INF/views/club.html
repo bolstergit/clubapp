@@ -1,0 +1,100 @@
+<div class="generic-container" ng-controller="ClubController">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead">Club Registration Form </span>
+		</div>
+		<div class="formcontainer">
+			<form class="form-horizontal">
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="clubname">Club Name</label>
+						<div class="col-md-7">
+							<input type="text" id="uname"
+								class="username form-control input-sm"
+								placeholder="Enter your name" />
+						</div>
+					</div>
+				</div>
+	
+	
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="clublogo">Club Logo</label>
+						<div class="col-md-7">
+							<input type="file" id="clublogo" />
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="address">Address</label>
+						<div class="col-md-1">
+							<input type="text" id="unitno" class="form-control input-sm" placeholder="Unit" />
+						</div>
+						<div class="col-md-5">
+							<input type="text" id="streetno" class="form-control input-sm" placeholder="Street" />
+						</div>
+						<div class="col-md-4">
+							<input type="text" id="suburb" class="form-control input-sm" placeholder="Suburb" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable"></label>
+						<div class="col-md-4">
+							<input type="email" id="city" class="form-control input-sm" placeholder="City" />
+						</div>
+						<div class="col-md-4">
+							<input type="text" id="state" class="form-control input-sm" placeholder="State" />
+						</div>
+						<div class="col-md-2">
+							<input type="email" id="postcode" class="form-control input-sm" placeholder="Postcode" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-actions floatRight">
+						<input type="submit" value="Add" class="btn btn-primary btn-sm" />
+						<button type="button" class="btn btn-warning btn-sm">Reset Form</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead">List of Clubs </span>
+		</div>
+		<div class="tablecontainer">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Club Name</th>
+						<th>Address</th>
+						<th>Logo Preview</th>
+						<th width="20%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="c in clubs">
+						<td><span>{{c.clubName}}</span></td>
+						<td><span>Unit {{c.address.unitNo + ", " + c.address.streetNo + " " + c.address.streetName}}
+							<br/>{{c.address.suburb + ", " + c.address.city+ ", " + c.address.state}}</span></td>
+						<td><span>{{c.clubLogo}}</span></td>
+						<td>
+							<button type="button" 
+								class="btn btn-success custom-width">Edit</button>
+							<button type="button" 
+								class="btn btn-danger custom-width">Remove</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
