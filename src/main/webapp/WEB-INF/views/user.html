@@ -1,0 +1,85 @@
+<div class="generic-container" ng-controller="UserController">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<span class="lead">User Registration Form </span>
+		</div>
+		<div class="formcontainer">
+			<form class="form-horizontal">
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="uname">Name</label>
+						<div class="col-md-7">
+							<input type="text" id="uname"
+								class="username form-control input-sm"
+								placeholder="Enter your name" />
+						</div>
+					</div>
+				</div>
+	
+	
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="address">Address</label>
+						<div class="col-md-7">
+							<input type="text" id="address"
+								class="form-control input-sm"
+								placeholder="Enter your Address. [This field is validation free]" />
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="email">Email</label>
+						<div class="col-md-7">
+							<input type="email" id="email"
+								class="email form-control input-sm"
+								placeholder="Enter your Email" />
+						</div>
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="form-actions floatRight">
+						<input type="submit" value="Add" class="btn btn-primary btn-sm" />
+						<button type="button" class="btn btn-warning btn-sm">Reset Form</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<!-- Default panel contents -->
+		<div class="panel-heading">
+			<span class="lead">List of Users </span>
+		</div>
+		<div class="tablecontainer">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID.</th>
+						<th>Name</th>
+						<th>DoB</th>
+						<th>Email</th>
+						<th width="20%"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="u in users">
+						<td><span>{{u.userId}}</span></td>
+						<td><span>{{u.firstname + " " + u.lastname}}</span></td>
+						<td><span></span>{{u.dob}}</td>
+						<td><span></span>{{u.email}}</td>
+						<td>
+							<button type="button" 
+								class="btn btn-success custom-width">Edit</button>
+							<button type="button" 
+								class="btn btn-danger custom-width">Remove</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
