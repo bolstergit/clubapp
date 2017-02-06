@@ -1,4 +1,4 @@
-package com.teleapps.model;
+package com.bolster.model;
 
 public class User {
 	private int userId;

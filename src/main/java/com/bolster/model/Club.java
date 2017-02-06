@@ -1,4 +1,4 @@
-package com.teleapps.model;
+package com.bolster.model;
 
 import java.io.Serializable;
 

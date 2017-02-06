@@ -1,4 +1,4 @@
-package com.teleapps.controller;
+package com.bolster.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.teleapps.model.User;
-import com.teleapps.service.UserService;
+import com.bolster.model.User;
+import com.bolster.service.UserService;
 
 @RestController
 public class UserController {

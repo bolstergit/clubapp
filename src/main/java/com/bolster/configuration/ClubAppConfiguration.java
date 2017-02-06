@@ -1,4 +1,4 @@
-package com.teleapps.configuration;
+package com.bolster.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,4 +1,4 @@
-package com.teleapps.dao;
+package com.bolster.dao;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.teleapps.model.Club;
+import com.bolster.model.Club;
 
 @Repository("clubDao")
 public class ClubDao {

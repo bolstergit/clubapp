@@ -1,4 +1,4 @@
-package com.teleapps.configuration;
+package com.bolster.configuration;
 
 import javax.servlet.Filter;
 
