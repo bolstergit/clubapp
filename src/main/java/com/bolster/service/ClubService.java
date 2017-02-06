@@ -1,4 +1,4 @@
-package com.bolster.service;
+package com.teleapps.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.bolster.dao.ClubDao;
-import com.bolster.model.Club;
+import com.teleapps.dao.ClubDao;
+import com.teleapps.model.Club;
 
 @Service("clubService")
 @Transactional

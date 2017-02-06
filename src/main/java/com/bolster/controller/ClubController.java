@@ -1,4 +1,4 @@
-package com.bolster.controller;
+package com.teleapps.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.bolster.model.Club;
-import com.bolster.service.ClubService;
+import com.teleapps.model.Club;
+import com.teleapps.service.ClubService;
 
 @RestController
 public class ClubController {

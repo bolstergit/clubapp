@@ -1,11 +1,11 @@
-package com.bolster.service;
+package com.teleapps.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.bolster.model.User;
+import com.teleapps.model.User;
 
 @Service("userService")
 public class UserService {

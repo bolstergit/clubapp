@@ -1,4 +1,4 @@
-package com.bolster.controller;
+package com.teleapps.controller;
 
 public class MainController {
 

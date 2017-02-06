@@ -1,4 +1,4 @@
-package com.bolster.configuration;
+package com.teleapps.configuration;
 
 import java.util.Properties;
 

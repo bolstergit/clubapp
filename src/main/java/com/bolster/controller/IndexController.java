@@ -1,4 +1,4 @@
-package com.bolster.controller;
+package com.teleapps.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
